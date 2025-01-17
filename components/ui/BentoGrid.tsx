@@ -1,7 +1,6 @@
 'use client'
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { GlobeDemo } from "./GridGlobe";
 import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from '@/data/confetti.json'
@@ -18,7 +17,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid md:auto-rows-[18rem] grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto ",
+        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
         className
       )}
     >
@@ -64,9 +63,10 @@ export const BentoGridItem = ({
         className
       )}
       style={{
-        // background: 'rgb(2,0,36)',
-        // background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,115,1) 42%, rgba(0,212,255,1) 100%)'
+        background: "rgb(4,7,29)",
+        backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
+      
     >
 
       <div className={`${id === 6 && 'flex justify-center'} h-full`}>
