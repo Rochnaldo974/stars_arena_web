@@ -42,7 +42,8 @@ export const BackgroundGradientAnimation = ({
 
   // Set global CSS variables
   useEffect(() => {
-    const bodyStyle = document.body.style;
+    if (typeof window !== "undefined") {
+      const bodyStyle = document.body.style;
     bodyStyle.setProperty("--gradient-background-start", gradientBackgroundStart);
     bodyStyle.setProperty("--gradient-background-end", gradientBackgroundEnd);
     bodyStyle.setProperty("--first-color", firstColor);
@@ -67,6 +68,7 @@ export const BackgroundGradientAnimation = ({
       bodyStyle.removeProperty("--size");
       bodyStyle.removeProperty("--blending-value");
     };
+    }
   }, [
     gradientBackgroundStart,
     gradientBackgroundEnd,
