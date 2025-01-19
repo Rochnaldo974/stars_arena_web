@@ -3,6 +3,8 @@ import Hero from "@/components/Hero";
 import RecentProject from "@/components/RecentProject";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
+
+export const dynamic = "force-dynamic";
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col
