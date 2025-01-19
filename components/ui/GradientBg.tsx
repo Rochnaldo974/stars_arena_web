@@ -42,7 +42,7 @@ export const BackgroundGradientAnimation = ({
 
   // Set global CSS variables
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== "undefined" && typeof document !== "undefined") {
       const bodyStyle = document.body.style;
     bodyStyle.setProperty("--gradient-background-start", gradientBackgroundStart);
     bodyStyle.setProperty("--gradient-background-end", gradientBackgroundEnd);
