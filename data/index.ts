@@ -51,11 +51,12 @@ export const navItems = [
       title: "Gagner des trophées et de l'argent en fonction de votre rang aux compétitions",
       description: "L'ascension de vos trophées ouvre les portes à des compétitions d'élite, où seuls les meilleurs se distinguent.",
       className: "md:col-span-3 md:row-span-2",
-      imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+      imgClassName: "absolute right-0 bottom-0 md:w-72 w-40 lg:w-96", // Ajuste les tailles pour différentes tailles d'écran
       titleClassName: "justify-center md:justify-start lg:justify-center",
       img: "/trophee.jpg",
       spareImg: "/grid.svg",
     },
+        
     {
       id: 6,
       title: "Venez nous suivre sur les réseaux sociaux",
